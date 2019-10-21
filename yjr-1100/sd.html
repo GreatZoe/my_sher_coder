@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>作业</title>
+</head>
+<style type="text/css">
+	*{
+		padding:0;
+		margin :0;
+	}
+	body{
+		text-align: center;
+		background: #FFCCFF;
+		font-family: "微软雅黑"；
+		font-size:28px;
+		background-image: linear-gradient(#CC00FF,#FF66FF,#9999FF,#CC99FF)
+
+	}
+	p { 
+		color: #000033;
+		text-align: left;
+		font-size: 120%;
+		margin-left: 4px;
+		margin-top: 6px;
+	}
+	img{
+		margin-top: 1.5%;
+		margin-bottom: 1%;
+		border-radius: 50%;
+		width: 16%;
+		transition: all 0.4s;
+		cursor: pointer;
+		transform: rotate(40deg);
+		  -ms-transform: rotate(30deg);		 /* IE 9 */
+		  -webkit-transform: rotate(30deg); 	/* Safari and Chrome */
+		  -o-transform: rotate(30deg);		 /* Opera */
+		  -moz-transform: rotate(30deg);      /* Firefox */
+	}
+	img:hover{
+		transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+
+	}
+	.question{
+
+		display:inline-block;
+		margin-bottom:  20px;
+		font-size: 30px;
+		letter-spacing:3px;
+		font-family:Consola; 
+	}
+	.btn{
+		transition: all 0.3s;
+		font-size: 26px;
+		border-style: none;
+		padding: 6px;
+		font-family: Arial,Consola;
+		font-style: italic;
+		height: 65%;
+		width: 23%;
+		border-radius: 50%;
+		letter-spacing:3px;
+		margin-bottom:35px;
+		background-image: linear-gradient(#9900CC,#9933CC,#9999FF,#CC99FF)
+	}
+
+	.next{
+		transition: all 0.3s;
+		font-size: 28px;
+		border-style: none;
+		padding: 8px;
+		font-family: Arial,Consola;
+		font-style: italic;
+		height: 65%;
+		width: 25%;
+		letter-spacing:4px;
+		margin-bottom:40px;
+		background-image: linear-gradient(#9900CC,#9933CC,#9999FF,#CC99FF)
+	}
+	.btn:hover{
+
+		transform: scale(1.1);
+		 -ms-transform: scale(1.1);
+		 -webkit-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+		 -moz-transform: scale(1.1);
+	
+	}
+	.next:hover{
+		transform: scale(1.2);
+		 -ms-transform: scale(1.2);
+		 -webkit-transform: scale(1.2);
+		 -o-transform: scale(1.2);
+		 -moz-transform: scale(1.2);
+	}
+	.bankground{
+		margin: auto;
+		width: auto;
+		overflow: hidden;
+		height: 550px;
+	}
+	.box{border:3px dashed #3300CC;
+		margin-top: 20px;
+		width: 380px;
+		height: 400px;
+	}
+	.fl{text-align: left;
+		float:left;
+		width: 500px;
+		margin-right: 10px;
+		font-size: 28px;
+		font-family: "微软雅黑"；
+		
+	}
+	.fl_1{
+		margin-left: 30px;
+		float:left;
+
+
+	}
+	.sub{transition: all 0.3s;
+		font-size: 26px;
+		border-style: none;
+		padding: 6px;
+		font-family: "微软雅黑";
+		width:200px; 
+		letter-spacing:3px;
+		margin-top :35px;
+		background-image: linear-gradient(#9900CC,#9933CC,#9999FF,#CC99FF)
+	}
+		clear:both;
+	}
+	
+</style>
+<body>
+	<p></p>
+    <script>
+        var pp = document.querySelector("p");
+        var str = "我女朋友分手了，但我不能安慰她..."
+        n = 0;
+        var timer;
+        timer = setInterval(function () {
+            if (n < str.length) {
+                pp.innerHTML += str.charAt(n);//sunstring(0,n)
+                n++
+            } else {
+                clearInterval(timer);
+            }
+        }, 100)
+    </script>
+	<div class="head">
+		<a href="https://user.qzone.qq.com/1192167274?source=friendlist" target="_blank" title="不要点"><img src="head.jpg" alt="小猫头像" /></a>
+	</div>
+	<div class="bankground" >
+		<span class="question">How are you feeling today?</span>
+		<form action="form_action.asp">
+			<input class="btn" type="button" value="GREAT!"  title="点最后一个" /><br />
+			<input class="btn" type="button" value="GOOD!" title="点最后一个" /><br />
+			<input class="btn" type="button" value="OKAY!" title="点最后一个" /><br />
+			<a href="https://music.163.com/m/program?id=2063103090&userid=368268094&from=message" target="_blank"><input class="btn" type="button" value="BAD!" title="不开心就点我吧"/></a><br />
+			<a href="#next"><input type="button" value="NEXT" class="next " /></a>
+		</form>
+	</div>	
+	<div class="box">
+		<div class="fl">
+			<span id="next">周日培训的大佬里谁最妖娆？</span>
+			
+			<div class="fl_1">
+				<form action="form_action.asp">
+				<input type="radio" name="name" id="up" /> <label for="up">update gg</label><br />
+				<input type="radio" name="name" id="ch" /> <label for="ch">陈 gg</label>    <br />
+				<input type="radio" name="name" id="yi" /> <label for="yi">尹 gg</label>    <br />
+				<input type="radio" name="name" id="zh" /> <label for="zh">周 jj</label>    <br />
+				<input type="radio" name="name" id="gu" /> <label for="gu">顾 jj</label>    <br />
+				<input type="radio" name="name" id="li"/> <label for="li">李 jj</label>    <br />
+				<input type="submit" value="提交" class="sub" />
+			</form>
+		</div>
+		</div>
+		<div class="fl.2">sss</div>
+	</div>
+</body>
+</html>
