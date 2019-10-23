@@ -348,7 +348,7 @@ color:red;
 
 ​		值：em字符，px 像素，百分比（盒子的宽度的百分比，）。
 
-![批注 2019-10-04 171341](D:\杨嘉睿\HTML学习\批注 2019-10-04 171341.png) 
+![批注 2019-10-04 171341](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(9).png) 
 
 > text-decoration 文本修饰
 
@@ -365,7 +365,7 @@ color:red;
 
 盒模型又叫框模型，
 
-![批注 2019-10-04 173758](D:\杨嘉睿\HTML学习\批注 2019-10-04 173758.png)
+![批注 2019-10-04 173758](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(10).png)
 
 一个盒子包含五个部分：宽度，高度，内边距，边框，外边距。
 
@@ -434,7 +434,7 @@ padding区域可以渲染背景颜色，图片
 >
 > 根据方向分类
 >
-> ![批注 2019-10-04 193235](D:\杨嘉睿\HTML学习\批注 2019-10-04 193235.png)
+> ![批注 2019-10-04 193235](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(11).png)
 >
 > 必须把线宽，线性，颜色写完整
 
@@ -442,7 +442,7 @@ padding区域可以渲染背景颜色，图片
 
 border-top-style
 
-做一个三角![三角](D:\杨嘉睿\HTML学习\批注 2019-10-04 193909.png)
+做一个三角![三角](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(12).png)
 
 表格边框合并：
 
@@ -458,7 +458,7 @@ border-collapse 边框合并属性
 
 特殊的 让盒子居中
 
-![批注 2019-10-04 195034](D:\杨嘉睿\HTML学习\批注 2019-10-04 195034.png)
+![批注 2019-10-04 195034](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(13).png)
 
 给盒子设置好宽高，然后左右 auto。
 
@@ -522,19 +522,19 @@ div{
 }
 ```
 
-![批注 2019-10-05 071215](D:\杨嘉睿\HTML学习\批注 2019-10-05 071215.png)
+![批注 2019-10-05 071215](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(15).png)
 
 嵌套的盒子margin也会重合，
 
 ​	如果父盒子和子盒子有同一方向的margin 那么只会显示出其中较大的一个，如果父盒子没有margin 但子盒子有，父盒子会随子盒子以同改变。
 
-![批注 2019-10-05 071834](D:\杨嘉睿\HTML学习\批注 2019-10-05 071834.png)
+![批注 2019-10-05 071834](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(16).png)
 
 因此，一般给上面的盒子设置下边距或者给下面的盒子设上边界，不用都设置。
 
 ***注意***：强行给父盒子加一个边框，强制限定父盒子的位置，如此会让子盒子和父盒子留有间距///或者给父盒子设置padding属性，子盒子与父盒子的间距用padding撑开。
 
-![批注 2019-10-05 072406](D:\杨嘉睿\HTML学习\批注 2019-10-05 072406.png)
+![](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(1).png)
 
 ### 5、居中
 
@@ -628,45 +628,92 @@ div{
 
 ### 2、清除浮动
 
+> 浮动的元素不能撑开父级，会影响后面的浮动
 
+法一：给父级加高度，限制其中元素的浮动范围，但是效果不好，高度不能自适应。
 
+法二：清楚浮动属性 clear 
 
+​       属性值：left 、right、both
 
+​        作用：清除自身受到的其他元素带来的浮动影响，但父盒子还是没有被撑开，而且如果margin 小于中间浮动的子元素，显示效果失效。
 
+法三：隔墙法
 
+​           在互相影响的元素中间加一个墙，隔开两边元素，墙上添加一个clear属性。
 
+> 外墙法：在右浮动元素的父盒子之间隔墙。
+>
+> 在两个div之间再加一个div，给其设置clear属性，并设置hight属性，模仿margin的样式。真正的margin失效。
 
+> 内墙法：在有浮动元素的盒子里加一个div，不进行浮动，设置clear属性。
+>
+> 但如果每个浮动都加墙，很麻烦啊！！！
 
+法四：overflow:hidden
 
+​           盒子内部的元素可以设置溢出模式，隐藏：hidden    溢出滚动： auto 
 
+对于清除浮动来说，用overflow可以清楚一个盒子内的浮动的影响。
 
+## 九、转换
 
+### 1、2D转换
 
+- 转动
 
+  `transform:rotate(30deg);`
 
+  元素顺时针旋转给定角度，可以是负值，逆时针。
 
+- 移动
 
+  `transform：translate(50px,100px);`
 
+  把元素从左侧移动50像素，从顶端移动100像素。
 
+- 伸缩
 
+  `transform: scale(2,4);`
 
+  宽度转换为原始尺寸的 2 倍，把高度转换为原始高度的 4 倍。
 
+- 翻转
 
+  `transform: skew(30deg,20deg);`
 
+  围绕 X 轴把元素翻转 30 度，围绕 Y 轴翻转 20 度。
 
+## 十、超链接a标签的修饰
 
+### 1、a的四个显示状态
 
+​		
 
+```html
+a:link{
+	color:blue;/*什么操作都没有时*/
+}
+a:visited{
+	color:purple;/*访问过后*/
+}
+a:hover{
+	color:red;/*鼠标放在上面时*/
+}
+a:active{
+	color:green;/*按下鼠标不放时*/
+}
+```
 
+四个状态根据用户动作产生变化，动作没有发生，不会显示。
 
+### 2、a的四个伪类的书写顺序
 
+四个伪类都有自己的权重，权重相同，根据书写顺序不同，会层叠之前的状态，一般按照上面的顺序比较正常。
 
+### 3、a的实际应用
 
-
-
-
-
-
+a标签不能继承父级的 text-decoration ，color等样式，其他可以继承。实际使用中一般不会四个颜色，花里胡哨的，link和visited一边一样。
 
 #### 背景色
 
@@ -758,10 +805,6 @@ background-image: url("图片链接")
 body {    /*设置背景图片*/    background-image: url("https://www.educoder.net/attachments/download/211104");    background-repeat: no-repeat;    background-position: right top;}
 ```
 
- 
-
-
-
 
 
 | 属性值          |
@@ -775,6 +818,4 @@ body {    /*设置背景图片*/    background-image: url("https://www.educoder.
 | `bottom left`   |
 | `bottom center` |
 | `bottom right`  |
-
-
 
