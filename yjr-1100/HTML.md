@@ -106,7 +106,7 @@ h1标签的作用不是让字变大变粗，而是添加了一个标题语义，
 
 * body： 用户能看到的内容
 
-![批注 2019-10-02 072722](D:\杨嘉睿\HTML学习\批注 2019-10-02 072722.png)
+![](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%202019-10-02%20072722.png)
 
 ### 2、文档DTD
 
@@ -148,7 +148,7 @@ h1标签的作用不是让字变大变粗，而是添加了一个标题语义，
 
 >  **注意**：规定的字符集必须与编辑软件的保存字符集类型一致，否则会出现乱码
 >
-> <img src="D:\杨嘉睿\HTML学习\批注 2.png" alt="批注 2" style="zoom: 80%;" />
+> <img src="https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%202.png" alt="批注 3" style="zoom:80%;" />
 
 ​		***title 标签：***双标签，内部书写网页的标题。
 
@@ -184,7 +184,7 @@ h1标签的作用不是让字变大变粗，而是添加了一个标题语义，
 
 ​		在普通文本内部：如果有空格，缩进，换行，将这些空白区折叠为一个空格显示。
 
-<img src="D:\杨嘉睿\HTML学习\批注 3.png" alt="批注 3" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%203.png" alt="批注 3" style="zoom:80%;" />
 
 ### **3、html标签**
 
@@ -482,7 +482,7 @@ scope 属性
 		</tr>
 ```
 
-<img src="D:\杨嘉睿\HTML学习\批注 2019-10-03 064159.png" alt="批注 2019-10-03 064159" style="zoom:150%;" /> 
+![](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%202019-10-03%20064159.png) 
 
 ### 3、表格分区
 
@@ -526,7 +526,7 @@ scope 属性
 		</tbody>
 ```
 
- 			![批注 2019-10-03 070346](D:\杨嘉睿\HTML学习\批注 2019-10-03 070346.png)
+ 			![批注 2019-10-03 070346](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%202019-10-03%20070346.png)
 
 # 九、表单
 
@@ -548,9 +548,19 @@ scope 属性
 
    		  input标签：输入，单标签  ，
 
-  				有一个属性：type。根据属性值不同，input标签代表的是不同表单元素，表单元素类似于特殊文本，type值是text时代表文本框。
+  				有一个属性：type。根据属性值不同，input标签代表的是不同表单元素，表单元素类似于特殊文本，type值是text时代表单行文本框。
 
-​      			 另一个属性：value。表示“值”,没输入之前的默认文本。
+​      			 属性：value。表示“值”,没输入之前的默认文本。
+
+​								placeholder,也是没输入前显示的，但颜色浅，输入时消失。
+
+​								size ，拓宽单行文本框
+
+​								maxlength ，最大输入字符数
+
+​								readonly，只读，不能删改
+
+
 
 ```html
 <p>
@@ -558,7 +568,7 @@ scope 属性
 </p>
 ```
 
-![批注 2019-10-03 071945](D:\杨嘉睿\HTML学习\批注 2019-10-03 071945.png)
+![批注 2019-10-03 071945](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%202019-10-03%20071945.png)
 
 ### 3、密码框
 
@@ -584,7 +594,7 @@ scope 属性
 
   			  type属性：radio  一组单选框只能选一个，但需要设置 name属性来设置哪几个单选框是同一组
 
-![批注 2019-10-03 085129](D:\杨嘉睿\HTML学习\批注 2019-10-03 085129.png)
+![批注 2019-10-03 085129](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(2).png)
 
 在选项后面加`<br>` 来使选项分段
 
@@ -661,7 +671,19 @@ textarea{
 </select>
 ```
 
-![批注 2019-10-03 145329](D:\杨嘉睿\HTML学习\批注 2019-10-03 145329.png)
+![批注 2019-10-03 145329](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(7).png)
+
+### 9、range表单
+
+一个滑条样的东西，
+
+属性：min 最小值
+
+​			max 最大值
+
+​			step：规定滑动的节点，如step="100",只能一次划100个值，不能放在中间。
+
+​			value：初始滑块位置。
 
 # 十、HTML 杂项
 
@@ -682,9 +704,9 @@ textarea{
 
 ### 3、废弃标签
 
-![批注 2019-10-03 094002](D:\杨嘉睿\HTML学习\批注 2019-10-03 094002.png)
+![批注 2019-10-03 094002](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(4).png)
 
-![批注 2019-10-03 094419](D:\杨嘉睿\HTML学习\批注 2019-10-03 094419.png)
+![批注 2019-10-03 094419](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(5).png)
 
 ### 4、提高用户体验
 
@@ -699,6 +721,6 @@ textarea{
 <input type="password" id="pwd" name="password" />
 ```
 
-![批注 2019-10-03 144518](D:\杨嘉睿\HTML学习\批注 2019-10-03 144518.png)
+![批注 2019-10-03 144518](https://raw.githubusercontent.com/yjr-1100/my_sher_coder-1/master/yjr-1100/img/pz%20(6).png)
 
 ***注意：***`<label>`标签的`for`属性的值要和相应<font size="4" color="red">表单元素</font>的`id`的值相同。这样才能把`<label>`标签和表单元素绑定到一起
