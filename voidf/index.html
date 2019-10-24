@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    <audio src="bgm/1.mp3" onended="fuc()" id="bgmc">
+			<p id="np">1</p>
+	</audio>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>爬虫</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="./Dump_Files/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Dump_Files/default.min.css">
+    <link type="text/css" href="./Dump_Files/themes.min.css" rel="stylesheet">
+    <link type="text/css" href="./Dump_Files/animate.min.css" rel="stylesheet">
+    <link type="text/css" href="./Dump_Files/style.css" rel="stylesheet">
+
+    <script src="./Dump_Files/jquery.min.js"></script>
+    <link rel="stylesheet" id="wp-block-library-css" href="./Dump_Files/style.min.css" type="text/css" media="all">
+    <script>
+        window._ERPHPDOWN = {
+            "uri": "https://www.gogalgame.com/wp-content/plugins/erphpdown",
+            "payment": "2",
+            "author": "mobantu"
+        }
+    </script>
+    <meta name="keywords" content="关键字">
+    <meta name="description" itemprop="description" content="描述">
+</head>
+
+<body>
+    <header class="header-global">
+        <div class="top_title title" id="anchor_top">
+            <h2>
+                Python与爬虫——简介
+                <p>注：如无特别说明本文中所有Py或者Python均指Python3</p>
+            </h2>
+        </div>
+        <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--not-top headroom--not-bottom">
+            <div class="container">
+                <a class="navbar-brand mr-lg-5" href="https://github.com/voidf">
+                    <img src="./Dump_Files/fluidicon.png" alt="xddddddddddddddddd" class="headerlogo"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+                <div class="navbar-collapse collapse" id="navbar_global">
+                    <div class="navbar-collapse-header">
+                        <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="https://github.com/voidf">
+                                    <img src="./Dump_Files/fluidicon.png" alt="xddddddddddddddddd" class="headerlogo"> </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+                        <li class="nav-item active"><a href="#anchor_top" class="nav-link">顶部</a></li>
+                        <li class="nav-item"><a href="javascript:pauseAndPlay()" class="nav-link" id="Tone_Tag">音乐</a></li>
+                        <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle  nav-link" aria-haspopup="true">导航 </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="#anchor_1" class="dropdown-item">是什么</a></li>
+                                <li class="nav-item"><a href="#anchor_2" class="dropdown-item">为什么</a></li>
+                                <li class="nav-item"><a href="#anchor_3" class="dropdown-item">怎么做</a></li>
+                                <li class="nav-item"><a href="#anchor_4" class="dropdown-item">提高效率</a></li>
+                                <li class="nav-item"><a href="#anchor_5" class="dropdown-item">其他问题</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-profile-cover section-blog-cover section-shaped my-0 " style="background-image: url(&#39;Dump_Files/64570224_p0.jpg&#39;);">
+        <div class="shape shape-style-1 shape-primary alpha-4">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="separator separator-bottom separator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none">
+          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+        </div>
+    </section>
+    <main class="meowblog">
+        <div class="main-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 post-standard-list3-style">
+
+                        <div class="entry-blog blog-default wow fadeInUp" style="visibility: hidden; animation-name: none;" id="anchor_1">
+                            <div class="entry-blog-listing clearfix">
+                                <div class="post-standard-view">
+                                    <div class="post-title-content">
+                                        <div class="post-header">
+                                            <h2 class="entry-post-title">
+                                                <a href="https://baike.baidu.com/item/网络爬虫/5162711?fr=aladdin">是什么：</a>
+                                            </h2>
+                                            <span class="category-meta">
+												网络爬虫是什么？
+											</span>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-left">
+                                        <div class="entry-format">
+                                            <div class="featured-image">
+
+                                                <div class="galgame-manufacturers">
+                                                    <span>ShadowVerse</span>
+                                                </div>
+                                                <div class="tab-info-translate-yes tab-info"><span>Arisa</span></div>
+
+                                                <a target="_blank" href="https://baike.baidu.com/item/网络爬虫/5162711?fr=aladdin#6">
+                                                    <img class="img-fluid" src="./Dump_Files/arisa.jpg" alt="网络爬虫是什么">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-right">
+                                        <div class="post-content">
+
+                                            <div class="post-meta-list">
+
+                                                <span class="list-post-author">
+						<i class="fa fa-user-circle"></i> ？						</span>
+
+                                                <span class="list-post-Views">
+						<i class="fa fa-thumbs-o-up"></i>  0						</span>
+                                                <span class="list-post-time">
+							<i class="fa fa-pencil" rel="category tag"></i> 20:52 下午						</span>
+
+                                                <span class="list-post-comment">
+						<i class="fa fa-comments-o"></i>  0 
+						</span>
+
+                                            </div>
+
+                                            <div class="post-intro-text">
+                                                <p>百度的定义在这里就不再赘述了。</p>
+                                                <h5>简单地说爬虫就是收集Web信息的工具。</h5>
+                                                <br>收集Web信息,即是实现例如网页提取，网站间连接关系的探索，多媒体信息收集这类功能。
+                                                <br> 这些信息的数量往往很大所以只能由工具而不是工具人来收集。
+                                                <br><br>
+                                                <h5>爬虫应用最显著的例子就是搜索引擎。</h5>
+                                                <br>每一个强大的搜索引擎的背后都有一个（或多个）强大的爬虫来为其提供即时并且庞大的信息记录。
+                                                <br>即是说，没有爬虫，搜索引擎就无法提供大量而丰富查找结果。
+                                                <br><br>
+                                                <h5>可我们又不是做搜索引擎的，学爬虫有什么意义呢？</h5>
+                                                <br>个人用的爬虫也是存在的。
+                                                <br>对于特定网站的特定信息收集，没有现成的搜索引擎或数据库存在这种情况。
+                                                <br>我们就得学会自己写爬虫来完成这个任务。
+                                                <br><br>
+                                                <h5>举个例子：</h5>
+                                                <br>我想下载某Q阅读我已经购买的小说，但是PC端网页上不提供下载，只有1页1页的文字。
+                                                <br>我想下载屑站我已经购买的漫画，但是同上。
+                                                <br><br>总之，爬虫就是做这种事的。
+                                            </div>
+
+                                            <div class="post-btn">
+                                                <a href="https://baike.baidu.com/item/网络爬虫/5162711?fr=aladdin#6" target="_blank" class="btn btn-sm btn-outline-danger">
+                                                    <i class="fa fa-folder-open-o"></i> 百度百科</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="entry-blog blog-default wow fadeInUp" style="visibility: hidden; animation-name: none;" id="anchor_2">
+                            <div class="entry-blog-listing clearfix">
+                                <div class="post-standard-view">
+                                    <div class="post-title-content">
+                                        <div class="post-header">
+                                            <h2 class="entry-post-title">
+                                                <a href="https://baike.baidu.com/item/网络爬虫/5162711?fr=aladdin">为什么：</a>
+                                            </h2>
+                                            <span class="category-meta">
+												为什么要用Python写爬虫？
+											</span>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-left">
+                                        <div class="entry-format">
+                                            <div class="featured-image">
+
+                                                <div class="galgame-manufacturers">
+                                                    <span>Pixiv_Id</span>
+                                                </div>
+                                                <div class="tab-info-translate-yes tab-info"><span>62854438</span></div>
+
+                                                <a target="_blank" href="http://c.biancheng.net/view/2011.html">
+                                                    <img class="img-fluid" src="./Dump_Files/62854438_crop.jpg" alt="为什么要用Python写爬虫">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-right">
+                                        <div class="post-content">
+
+                                            <div class="post-meta-list">
+
+                                                <span class="list-post-author">
+						<i class="fa fa-user-circle"></i> 虫麻呂						</span>
+
+                                                <span class="list-post-Views">
+						<i class="fa fa-thumbs-o-up"></i>  25,282						</span>
+                                                <span class="list-post-time">
+							<i class="fa fa-pencil" rel="category tag"></i> 7:45 上午						</span>
+
+                                                <span class="list-post-comment">
+						<i class="fa fa-comments-o"></i>  220,305 
+						</span>
+
+                                            </div>
+
+                                            <div class="post-intro-text">
+                                                <h5>说到爬虫就不得不提Python。</h5>
+                                                <br>为什么爬虫老是和拍肾捆绑在一起<del>营业</del>呢？
+                                                <br><del>这背后是不是有着什么肮脏的py教育？</del>
+                                                <br>爬虫的核心是做<b>网页请求</b>，为什么py有着得天独厚的优势？
+                                                <br>口说无凭，我们直接上例子如何？
+                                                <br><br>
+                                                <h5>先来看看一个请求包里面装有什么东西</h5>
+                                                <h5>GET包</h5>
+                                                <div class="entry-blog-list-left">
+                                                    <div class="entry-format">
+                                                        <div class="featured-image">
+
+                                                            <div class="galgame-manufacturers">
+
+                                                            </div>
+                                                            <div class="tab-info-translate-yes tab-info"></div>
+
+                                                            <a target="_blank" href="./Dump_Files/raw.png">
+                                                                <img class="img-fluid" src="./Dump_Files/raw.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                                <h5>POST包</h5>
+                                                <div class="entry-blog-list-left">
+                                                    <div class="entry-format">
+                                                        <div class="featured-image">
+
+                                                            <div class="galgame-manufacturers">
+
+                                                            </div>
+                                                            <div class="tab-info-translate-yes tab-info"></div>
+
+                                                            <a target="_blank" href="./Dump_Files/rawP.png">
+                                                                <img class="img-fluid" src="./Dump_Files/rawP.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br><br><br>
+                                                <h5>C语言如何做请求？</h5>
+                                                <br>
+                                                <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;sys/types.h&gt;
+#include &lt;sys/socket.h&gt;
+#include &lt;netinet/in.h&gt;
+#include &lt;arpa/inet.h&gt;
+#include &lt;errno.h&gt;
+
+#define BUFSIZE 1024
+#define DestIp &quot;xx.xx.xx.xx&quot;
+#define DestPort 9000
+#define Req &quot;GET /index.html HTTP/1.1\r\nHost: xx.xx.xx.xx\r\nConnection: Close\r\n\r\n&quot;
+#define ReqLen sizeof(Req)
+
+int main(int argc, char *argv[]) {
+                ssize_t i;
+                int nRequestLen;
+
+                char strResponse[BUFSIZE]={0};
+                char strRequest[BUFSIZE]={0};
+
+
+                int sockfd, numbytes;
+                struct sockaddr_in dest_addr; /* connector&#x27;s address information */
+
+                if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
+                                perror(&quot;socket&quot;);
+                                exit(1);
+                }
+
+                dest_addr.sin_family = AF_INET; /* host byte order */
+                dest_addr.sin_port = htons(DestPort); /* short, network byte order */
+                dest_addr.sin_addr.s_addr = inet_addr(DestIp);
+
+                /* Create and setup the connection */
+                if (connect(sockfd, (struct sockaddr *)&amp;dest_addr,sizeof(struct sockaddr)) == -1){
+                                perror(&quot;connect&quot;);
+                                exit(1);
+                }
+
+                /* Send the request */
+                strncpy(strRequest, Req,ReqLen);
+                nRequestLen = ReqLen;
+                if (write(sockfd,strRequest,nRequestLen) == -1) {
+                        perror(&quot;write&quot;);
+                        exit(1);
+                }
+
+                /* Read in the response */
+                while(1) {
+                                i = read(sockfd,strResponse,BUFSIZE-1);
+                                if(0 &gt;= i){
+                                                break;
+                                }
+                                strResponse[i]=&#x27;\0&#x27;;
+                                printf(strResponse);
+
+                }
+
+                /* Close the connection */
+                close(sockfd);
+}
+                                                </code></pre>
+                                                <div class="post-btn">
+                                                    <a href="https://blog.csdn.net/carzyer/article/details/16115969" target="_blank" class="btn btn-sm btn-outline-danger">
+                                                        <i class="fa fa-folder-open-o"></i> 原文链接</a>
+                                                </div>
+                                                <br>网上抄的代码，包括了返回包的处理和请求异常的处理。
+                                                <br>我们只需要看socket库有关的socket()、connect()这两个方法（函数）。
+                                                <br><br>可见C是用了<b>socket库</b>来发送网络请求的。
+                                                <br>然而套接字socket库往往用来处理更底层的TCP请求，所以直接用它写http请求的话需要写包头，写读包方式，看起来非常乱而且麻烦。
+                                                <br>而且看头部的define可知这里定义了request包的请求头，用一行。当某些池沼的网站要求又臭又长的GET请求头的时候这么写就会非常痛苦。(虽然也可以用斜杠来打断一行来进行美化)
+                                                <br><br>C比起其他代码，最大的优势就是快。但是制约爬虫工作效率的往往是带宽（网速）。在这一点上C无法比别的语言更占优势。
+                                                <br>所以基本上没人会用C来写爬虫。
+                                                <br><br>C++的情况和C类似，不再赘述。至于C#，它的HttpWebRequest类还需要通过写流（Stream）来实现请求，同样不够方便。
+                                                <br><br>
+                                                <h5>Java如何做请求？</h5>
+                                                <pre><code>
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.junit.Test;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class HttpApi {
+    String uri = &quot;http://127.0.0.1:7080/simpleweb&quot;;
+
+    /**
+        * Get方法
+        */
+    @Test
+    public void test1() {
+        try {
+            URL url = new URL(uri + &quot;/test1?code=001&amp;name=测试&quot;);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            connection.setDoOutput(true); // 设置该连接是可以输出的
+            connection.setRequestMethod(&quot;GET&quot;); // 设置请求方式
+            connection.setRequestProperty(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded; charset=UTF-8&quot;);
+
+            BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream(), &quot;utf-8&quot;));
+            String line = null;
+            StringBuilder result = new StringBuilder();
+            while ((line = br.readLine()) != null) { // 读取数据
+                result.append(line + &quot;\n&quot;);
+            }
+            connection.disconnect();
+
+            System.out.println(result.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+                                                </code></pre>
+                                                <div class="post-btn">
+                                                    <a href="https://www.cnblogs.com/zhi-leaf/p/8508071.html" target="_blank" class="btn btn-sm btn-outline-danger">
+                                                        <i class="fa fa-folder-open-o"></i> 原文链接</a>
+                                                </div>
+                                                <br>Java的情况就其实还好，这里只把GET请求拿出来以便对比。
+                                                <br>渣瓦的工业爬虫也是存在的，但是本来渣瓦这门语言码量就不少。
+                                                <br>请求复杂的时候由于渣瓦提供的接口不够简洁，看起来也会比较麻烦。
+                                                <br>当然最重要的还没说到。
+                                                <br><br>
+                                                <h5>原装Python3如何做请求？</h5>
+                                                <pre><code>
+import urllib.request
+resu = urllib.request.urlopen(&#x27;http://www.baidu.com&#x27;)
+print(resu.read())
+                                                </code></pre>
+                                                <br>简单3句话，一个请求已经做好了（urllib库自带必要的请求头）
+                                                <br>如果要自定义headers怎么写呢？
+                                                <pre><code>
+import urllib.request
+hds = {
+    &quot;User-Agent&quot;:&#x27;Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)&#x27;,
+    &quot;host&quot;:&#x27;www.baidu.com&#x27;
+}
+req=urllib.request.Request(&#x27;http://www.baidu.com&#x27;,headers=hds)
+resu = urllib.request.urlopen(req)
+print(resu.read().decode(&quot;utf-8&quot;))
+                                                </code></pre>
+                                                <br>8句话，赤裸裸地吊打
+                                                <br>还能不能再简单点？
+                                                <pre><code>
+import requests
+hds = {
+    &quot;User-Agent&quot;:&#x27;Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)&#x27;,
+    &quot;host&quot;:&#x27;www.baidu.com&#x27;
+}
+req=requests.get(&#x27;http://www.baidu.com&#x27;,headers=hds)
+print(req.text)
+                                                </code></pre>
+                                                <br>这就是我目前写爬虫或者别的脚本用的形式了。
+                                                <br>requests是第三方库，需通过pip或者别的包管理器如conda来安装。
+                                                <br>总结一下
+                                                <br><br>
+                                                <h4>为什么Python适合做爬虫？</h4>
+                                                <blockquote>
+                                                    <h5>语法简洁</h5>
+                                                    <h5>解释性</h5>
+                                                    <h5>开发快</h5>
+                                                    <h5>开源</h5>
+                                                    <blockquote>
+                                                        第三方包
+                                                        <br>开箱即用
+                                                    </blockquote>
+                                                </blockquote>
+                                                <div class="post-btn">
+                                                    <a href="http://www.sohu.com/a/291604094_120089040" target="_blank" class="btn btn-sm btn-outline-danger">
+                                                        <i class="fa fa-folder-open-o"></i> 参考链接</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="entry-blog blog-default wow fadeInUp" style="visibility: hidden; animation-name: none;" id="anchor_3">
+                            <div class="entry-blog-listing clearfix">
+                                <div class="post-standard-view">
+                                    <div class="post-title-content">
+                                        <div class="post-header">
+                                            <h2 class="entry-post-title">
+                                                <a href="https://baike.baidu.com/item/网络爬虫/5162711?fr=aladdin">怎么做：</a>
+                                            </h2>
+                                            <span class="category-meta">
+                                                    如何开发一个简单的网络爬虫？
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-left">
+                                        <div class="entry-format">
+                                            <div class="featured-image">
+
+                                                <div class="galgame-manufacturers">
+                                                    <span>Pixiv_Id</span>
+                                                </div>
+                                                <div class="tab-info-translate-yes tab-info"><span>58394192</span></div>
+
+                                                <a target="_blank" href="https://user.qzone.qq.com/510030805/infocenter">
+                                                    <img class="img-fluid" src="./Dump_Files/58394192_p0.jpg" alt="如何开发一个简单的网络爬虫">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-right">
+                                        <div class="post-content">
+
+                                            <div class="post-meta-list">
+
+                                                <span class="list-post-author">
+                            <i class="fa fa-user-circle"></i> 虫麻呂						</span>
+
+                                                <span class="list-post-Views">
+                            <i class="fa fa-thumbs-o-up"></i>  14,011						</span>
+                                                <span class="list-post-time">
+                                <i class="fa fa-pencil" rel="category tag"></i> 8:08 上午						</span>
+
+                                                <span class="list-post-comment">
+                            <i class="fa fa-comments-o"></i>  184,045 
+                            </span>
+
+                                            </div>
+
+                                            <div class="post-intro-text">
+                                                高考前那会其实本人写过有关的教程。
+                                                <div class="post-btn">
+                                                    <a href="https://user.qzone.qq.com/510030805/infocenter" target="_blank" class="btn btn-sm btn-outline-danger">
+                                                        <i class="fa fa-folder-open-o"></i> 抠抠空间</a>
+                                                </div>
+                                                但是现在不妨再排版一次。
+                                                <br><br>
+                                                <h5>工具整备</h5>
+                                                <br>Py本体和必要的库先要安装好，这里用到requests和bs4
+                                                <br>一个抓包工具，最方便的就是chrome的F12开发人员工具。
+                                                <br>方便的东西不太万能，当F12抓不到的时候考虑本地代理抓包工具。
+                                                <br>Fiddle，Charles Proxy
+                                                <br>玩Web渗透还会用到Burp Suite
+                                                <br>抓更深层次的TCP包还会用到WireShark
+                                                <br>现在我们只以F12为例。
+                                                <br><br>
+                                                <h5>确定目标</h5>
+                                                <br>空间里面我已经写过龙族的爬取教程。
+                                                <br>所以这次我们换个目标<del>才不是因为没钱买剩下的章节什么的</del>。
+                                                <br>
+                                                <br>作为一个穷人，你要知道<del>色魔张大妈</del>什么值得买。
+                                                <br>我们这次爬什么值得买的日推。
+                                                <br>
+                                                <div class="entry-blog-list-left">
+                                                    <div class="entry-format">
+                                                        <div class="featured-image">
+
+                                                            <div class="galgame-manufacturers">
+
+                                                            </div>
+                                                            <div class="tab-info-translate-yes tab-info"></div>
+
+                                                            <a target="_blank" href="./Dump_Files/cap.png">
+                                                                <img class="img-fluid" src="./Dump_Files/cap.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>打开F12切到Network开始监听，然后按下翻页观察出现的包。
+                                                <br>现在我们通过页面元素找包，用光标工具定位元素提取特征信息然后去Network里搜索。
+                                                <div class="entry-blog-list-left">
+                                                    <div class="entry-format">
+                                                        <div class="featured-image">
+
+                                                            <div class="galgame-manufacturers">
+
+                                                            </div>
+                                                            <div class="tab-info-translate-yes tab-info"></div>
+
+                                                            <a target="_blank" href="./Dump_Files/cap1.png">
+                                                                <img class="img-fluid" src="./Dump_Files/cap1.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>比我想的还容易找，但是这里因为是直接出现在html元素里所以我推荐用bs4这样的库来进行数据整理。
+                                                <br>现在我们切回到这个包的头，观察请求头是怎么构造的。
+                                                <div class="entry-blog-list-left">
+                                                    <div class="entry-format">
+                                                        <div class="featured-image">
+
+                                                            <div class="galgame-manufacturers">
+
+                                                            </div>
+                                                            <div class="tab-info-translate-yes tab-info"></div>
+
+                                                            <a target="_blank" href="./Dump_Files/cap2.png">
+                                                                <img class="img-fluid" src="./Dump_Files/cap2.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>出现了，又臭又长的游客Cookies，但是我们是Py玩家不慌。
+                                                <br>现在已经可以开始做一个请求来测试了，看代码。
+                                                <pre><code>
+import requests as r
+
+lnk=&quot;https://www.smzdm.com/tag/%E6%AF%8F%E5%A4%A9%E5%88%B7%E4%BB%80%E4%B9%88/youhui/p2/&quot;
+hds={
+    &quot;Accept&quot;:&quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&quot;,
+    &quot;Accept-Encoding&quot;:&quot;gzip, deflate, br&quot;,
+    &quot;Accept-Language&quot;:&quot;zh-CN,zh;q=0.9&quot;,
+    &quot;Connection&quot;:&quot;keep-alive&quot;,
+    &quot;Cookie&quot;:&quot;__ckguid=yXa2pi61v2BBVp32Fkhh2NJ6; device_id=191204048515671745044839662526fd55df59161fca8e769dbf196060; __jsluid_s=e085a9f43d816a5225881cbbc1230aef; homepage_sug=g; r_sort_type=score; _zdmA.uid=ZDMA.gZsKwfV0J.1569457714.2419200; _zdmA.vid=*; PHPSESSID=8d5d18d656dc62a513b77098f4347b81; ad_date=26; bannerCounter=%5B%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%5D; ad_json_feed=%7B%22J_feed_ad1%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%22J_feed_ad3%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%22J_feed_ad4%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%7D; _zdmA.time=1569457717278.1472.https%3A%2F%2Fwww.smzdm.com%2F; smzdm_user_view=2AB7DD871F92C09C7772D4F1A36BD23E; smzdm_user_source=F780F04B8A832B0A97F5416911DED571&quot;,
+    &quot;Host&quot;:&quot;www.smzdm.com&quot;,
+    &quot;Referer&quot;:&quot;https://www.smzdm.com/tag/%E6%AF%8F%E5%A4%A9%E5%88%B7%E4%BB%80%E4%B9%88/youhui/&quot;,
+    &quot;Upgrade-Insecure-Requests&quot;:&quot;1&quot;,
+    &quot;User-Agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&quot;
+}
+
+rp=r.get(lnk,headers=hds)
+print(rp.text)
+                                                </code></pre>
+                                                <br>于是一个简单的请求已经做好了，现在我们要做的是对服务器返回的数据进行收集处理。
+                                                <br>这里我用美汤做HTML的解析。<br>
+                                                <div class="post-btn">
+                                                    <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank" class="btn btn-sm btn-outline-danger">
+                                                        <i class="fa fa-folder-open-o"></i> BeautifulSoup文档</a>
+                                                </div><br>
+
+
+                                                <pre><code>
+from bs4 import BeautifulSoup as B
+s=B(rp.text,&quot;html.parser&quot;)
+li_raw=s.find_all(&quot;div&quot;,attrs={&quot;class&quot;:&quot;list list_preferential&quot;})
+
+lnks=[]
+titleN=[]
+titleR=[]
+info=[]
+def onlyText(ssrc,ignoreTag):
+    return "".join([text.strip() for text in ssrc.find_all(text=True) if text.parent.name !=ignoreTag and text.strip()])
+for li_single in li_raw:
+    lnks.append(li_single.find(&quot;a&quot;,attrs={&quot;class&quot;:&quot;picLeft&quot;})[&quot;href&quot;])
+    titleR.append(li_single.find(&quot;h3&quot;,attrs={&quot;class&quot;:&quot;itemName&quot;}).a.span.get_text())
+    titleN.append(onlyText(li_single.find(&quot;h3&quot;,attrs={&quot;class&quot;:&quot;itemName&quot;}).a,&quot;span&quot;))
+    info.append(&quot;&quot;.join([j.strip() for j in li_single.find(&quot;div&quot;,attrs={&quot;class&quot;:&quot;lrInfo&quot;}).find_all(text=True) if j.strip() and j!=&quot;阅读全文&quot;]))
+
+print(lnks)
+print(titleN)
+print(titleR)
+print(info)
+                                                </code></pre>
+                                                <br>我们感兴趣的信息大概就只有上面这些了。
+                                                <br>这只是一页的数据，我们期望爬完整个栏目的数据。
+                                                <br>所以现在观察请求包规律，进行复数的请求构造，并且重复上述部分过程收集信息。
+                                                <br><del>我会说我在这里碰到一个异常整整磨了我两个小时</del>
+                                                <br>
+                                                <br>从这里开始我重构了代码
+                                                <pre><code>
+# coding:utf-8
+from bs4 import BeautifulSoup as B
+import requests as r
+
+def onlyText(ssrc,ignoreTag):
+    return &quot;&quot;.join([text.strip() for text in ssrc(text=True) if text.parent.name !=ignoreTag and text.strip()])
+
+def getMsg(BOBJ):
+    li_raw=BOBJ(&quot;div&quot;,attrs={&quot;class&quot;:&quot;list list_preferential&quot;})
+    for li_single in li_raw:
+        lnks.append(li_single.find(&quot;a&quot;,attrs={&quot;class&quot;:&quot;picLeft&quot;})[&quot;href&quot;])
+        titleR.append(li_single.find(&quot;h3&quot;,attrs={&quot;class&quot;:&quot;itemName&quot;}).a.span.get_text())
+        info.append(&quot;&quot;.join([j.strip() for j in li_single.find(&quot;div&quot;,attrs={&quot;class&quot;:&quot;lrInfo&quot;})(text=True) if j.strip() and j!=&quot;阅读全文&quot;]))
+        titleN.append(onlyText(li_single.find(&quot;h3&quot;,attrs={&quot;class&quot;:&quot;itemName&quot;}).a,&quot;span&quot;))
+
+def updateTodo(BOBJ):
+    tdl=BOBJ.find(&quot;ul&quot;,attrs={&quot;class&quot;:&quot;pagination&quot;})(&quot;li&quot;)
+    for i in tdl:
+        try:
+            if i.a[&quot;href&quot;] not in todoList and i.a[&quot;href&quot;] not in visited:
+                todoList.append(i.a[&quot;href&quot;])
+        except TypeError:
+            pass
+        except Exception as e:
+            print(e)
+
+ses=r.session()
+ses.headers={
+    &quot;Accept&quot;:&quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&quot;,
+    &quot;Accept-Encoding&quot;:&quot;gzip, deflate, br&quot;,
+    &quot;Accept-Language&quot;:&quot;zh-CN,zh;q=0.9&quot;,
+    &quot;Connection&quot;:&quot;keep-alive&quot;,
+    &quot;Cookie&quot;:&quot;__ckguid=yXa2pi61v2BBVp32Fkhh2NJ6; device_id=191204048515671745044839662526fd55df59161fca8e769dbf196060; __jsluid_s=e085a9f43d816a5225881cbbc1230aef; homepage_sug=g; r_sort_type=score; _zdmA.uid=ZDMA.gZsKwfV0J.1569457714.2419200; _zdmA.vid=*; PHPSESSID=8d5d18d656dc62a513b77098f4347b81; ad_date=26; bannerCounter=%5B%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%5D; ad_json_feed=%7B%22J_feed_ad1%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%22J_feed_ad3%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%22J_feed_ad4%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%7D; _zdmA.time=1569457717278.1472.https%3A%2F%2Fwww.smzdm.com%2F; smzdm_user_view=2AB7DD871F92C09C7772D4F1A36BD23E; smzdm_user_source=F780F04B8A832B0A97F5416911DED571&quot;,
+    &quot;Host&quot;:&quot;www.smzdm.com&quot;,
+    &quot;Referer&quot;:&quot;https://www.smzdm.com/tag/%E6%AF%8F%E5%A4%A9%E5%88%B7%E4%BB%80%E4%B9%88/youhui/&quot;,
+    &quot;Upgrade-Insecure-Requests&quot;:&quot;1&quot;,
+    &quot;User-Agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&quot;
+}
+
+lnks=[]
+titleN=[]
+titleR=[]
+info=[]
+todoList=[]
+
+lnkPrefix=&quot;https:&quot;
+lnk=&quot;https://www.smzdm.com/tag/%E6%AF%8F%E5%A4%A9%E5%88%B7%E4%BB%80%E4%B9%88/youhui/&quot;
+visited=[lnk]
+
+rp=ses.get(lnk)
+s=B(rp.text,&quot;html.parser&quot;)
+
+updateTodo(s)
+getMsg(s)
+
+while len(todoList)!=0:
+    visited.append(todoList.pop())
+    lnk=lnkPrefix+visited[-1]
+    print(&quot;Getting %s&quot;%lnk)
+    s=B(ses.get(lnk).text,&quot;html.parser&quot;)
+    updateTodo(s)
+    getMsg(s)
+
+print(lnks)
+print(titleN)
+print(titleR)
+print(info)
+                                                </code></pre>
+
+                                                <br>整个栏目的信息现在我们都有了。
+                                                <br>现在我们考虑信息的存储。
+                                                <br>Py的sqlite3提供数据库的接口，但是我们的数据不多，这里也不便演示。
+                                                <br>在处理海量的数据的时候请务必使用数据库。
+                                                <br>我们可以用json来直接封装这些数据并且保存。
+                                                <br>
+                                                <pre><code>
+import json
+with open(&quot;DumpResource.txt&quot;,&quot;w&quot;) as f:
+    for i in range(len(lnks)):
+        f.write(json.dumps({
+            &quot;link&quot;:lnks[i],
+            &quot;normalTitle&quot;:titleN[i],
+            &quot;redTitle&quot;:titleR[i],
+            &quot;info&quot;:info[i]
+        })+&quot;\n&quot;)
+                                                </code></pre>
+                                                <br>结果是这样的：
+                                                <div class="entry-blog-list-left">
+                                                    <div class="entry-format">
+                                                        <div class="featured-image">
+
+                                                            <div class="galgame-manufacturers">
+
+                                                            </div>
+                                                            <div class="tab-info-translate-yes tab-info"></div>
+
+                                                            <a target="_blank" href="./Dump_Files/result.png">
+                                                                <img class="img-fluid" src="./Dump_Files/result.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>下次使用的时候用json.loads就行了。
+                                                <br>那么一条简单的爬虫写好了。
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="entry-blog blog-default wow fadeInUp" style="visibility: hidden; animation-name: none;" id="anchor_4">
+                            <div class="entry-blog-listing clearfix">
+                                <div class="post-standard-view">
+                                    <div class="post-title-content">
+                                        <div class="post-header">
+                                            <h2 class="entry-post-title">
+                                                <a href="https://baike.baidu.com/item/网络爬虫/5162711?fr=aladdin">提高效率</a>
+                                            </h2>
+                                            <span class="category-meta">
+                                                如何提高爬虫的效率？
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-left">
+                                        <div class="entry-format">
+                                            <div class="featured-image">
+
+                                                <div class="galgame-manufacturers">
+                                                    <span>Pixiv_Id</span>
+                                                </div>
+                                                <div class="tab-info-translate-yes tab-info"><span>52610961</span></div>
+
+                                                <a target="_blank" href="https://www.cnblogs.com/zhaochangbo/p/7761432.html">
+                                                    <img class="img-fluid" src="./Dump_Files/52610961_p0.jpg" alt="如何提高爬虫的效率">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-right">
+                                        <div class="post-content">
+
+                                            <div class="post-meta-list">
+
+                                                <span class="list-post-author">
+                        <i class="fa fa-user-circle"></i> 米っち						</span>
+
+                                                <span class="list-post-Views">
+                        <i class="fa fa-thumbs-o-up"></i>  17,568						</span>
+                                                <span class="list-post-time">
+                            <i class="fa fa-pencil" rel="category tag"></i> 20:20 下午						</span>
+
+                                                <span class="list-post-comment">
+                        <i class="fa fa-comments-o"></i>  332,236 
+                        </span>
+
+                                            </div>
+
+                                            <div class="post-intro-text">
+                                                <h5>上面那个爬虫有个严重的问题：</h5>
+                                                <center>
+                                                    <h1>遅い！</h1>
+                                                </center>
+                                                <br>平时用用还行，工业上这么慢的爬虫就等着被拍死吧！
+                                                <br>
+                                                <br>如果打开任务管理器的话我们可以看到：
+                                                <br>我们的爬虫现在只占用了很小一部分网络IO和CPU。
+                                                <br>那么想办法提高这两者的占用量就是提高效率首先要考虑的地方。
+                                                <br>
+                                                <br>我们的程序按照todoList里面的数据一个个做请求，等到上一个完全完成才开始下一个。
+                                                <br>就像你平时烧开水，你傻站着等开水烧完了才开始做下一件事——玩手机。
+                                                <br>根本不可能吧？我们为什么不能在烧开水的这段时间内玩手机？
+                                                <br><del>甚至还能一边玩手机一边听耳机</del>
+                                                <br><del>甚至还能一边听耳机一边练深蹲</del>
+                                                <br>
+                                                <br>所以我们可以考虑多线程。【重构警告】
+                                                <br>
+                                                <pre><code>
+# coding:utf-8
+from bs4 import BeautifulSoup as B
+import requests as r
+import json
+import threading as tr
+import time
+timeS=time.time()
+def onlyText(ssrc,ignoreTag):
+return &quot;&quot;.join([text.strip() for text in ssrc(text=True) if text.parent.name !=ignoreTag and text.strip()])
+
+def getMsg(BOBJ):
+li_raw=BOBJ(&quot;div&quot;,attrs={&quot;class&quot;:&quot;list list_preferential&quot;})
+for li_single in li_raw:
+infos.append(
+{
+&quot;link&quot;:li_single.find(&quot;a&quot;,attrs={&quot;class&quot;:&quot;picLeft&quot;})[&quot;href&quot;],
+&quot;normalTitle&quot;:onlyText(li_single.find(&quot;h3&quot;,attrs={&quot;class&quot;:&quot;itemName&quot;}).a,&quot;span&quot;),
+&quot;redTitle&quot;:li_single.find(&quot;h3&quot;,attrs={&quot;class&quot;:&quot;itemName&quot;}).a.span.get_text(),
+&quot;info&quot;:&quot;&quot;.join([j.strip() for j in li_single.find(&quot;div&quot;,attrs={&quot;class&quot;:&quot;lrInfo&quot;})(text=True) if j.strip() and j!=&quot;阅读全文&quot;])
+}
+)
+
+def updateTodo(BOBJ):
+tdl=BOBJ.find(&quot;ul&quot;,attrs={&quot;class&quot;:&quot;pagination&quot;})(&quot;li&quot;)
+for i in tdl:
+try:
+if i.a[&quot;href&quot;] not in todoList and i.a[&quot;href&quot;] not in visited:
+todoList.append(i.a[&quot;href&quot;])
+except TypeError:
+pass
+except Exception as e:
+print(e)
+
+def nowtask(nowlnk):
+taskList.append(nowlnk)
+ss=B(ses.get(nowlnk).text,&quot;html.parser&quot;)
+updateTodo(ss)
+getMsg(ss)
+taskList.remove(nowlnk)
+
+ses=r.session()
+ses.headers={
+&quot;Accept&quot;:&quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&quot;,
+&quot;Accept-Encoding&quot;:&quot;gzip, deflate, br&quot;,
+&quot;Accept-Language&quot;:&quot;zh-CN,zh;q=0.9&quot;,
+&quot;Connection&quot;:&quot;keep-alive&quot;,
+&quot;Cookie&quot;:&quot;__ckguid=yXa2pi61v2BBVp32Fkhh2NJ6; device_id=191204048515671745044839662526fd55df59161fca8e769dbf196060; __jsluid_s=e085a9f43d816a5225881cbbc1230aef; homepage_sug=g; r_sort_type=score; _zdmA.uid=ZDMA.gZsKwfV0J.1569457714.2419200; _zdmA.vid=*; PHPSESSID=8d5d18d656dc62a513b77098f4347b81; ad_date=26; bannerCounter=%5B%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%5D; ad_json_feed=%7B%22J_feed_ad1%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%22J_feed_ad3%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%22J_feed_ad4%22%3A%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%7D; _zdmA.time=1569457717278.1472.https%3A%2F%2Fwww.smzdm.com%2F; smzdm_user_view=2AB7DD871F92C09C7772D4F1A36BD23E; smzdm_user_source=F780F04B8A832B0A97F5416911DED571&quot;,
+&quot;Host&quot;:&quot;www.smzdm.com&quot;,
+&quot;Referer&quot;:&quot;https://www.smzdm.com/tag/%E6%AF%8F%E5%A4%A9%E5%88%B7%E4%BB%80%E4%B9%88/youhui/&quot;,
+&quot;Upgrade-Insecure-Requests&quot;:&quot;1&quot;,
+&quot;User-Agent&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&quot;
+}
+
+todoList=[]
+taskList=[]
+infos=[]
+
+lnkPrefix=&quot;https:&quot;
+lnk=&quot;https://www.smzdm.com/tag/%E6%AF%8F%E5%A4%A9%E5%88%B7%E4%BB%80%E4%B9%88/youhui/&quot;
+visited=[lnk]
+
+rp=ses.get(lnk)
+s=B(rp.text,&quot;html.parser&quot;)
+
+updateTodo(s)
+getMsg(s)
+
+while len(todoList)!=0 or len(taskList)!=0:
+if len(todoList)==0:
+pass
+else:
+visited.append(todoList.pop())
+lnk=lnkPrefix+visited[-1]
+#print(&quot;Getting %s&quot;%lnk)
+tr.Thread(target=nowtask,args=(lnk,)).start()
+
+
+with open(&quot;DumpResource2.txt&quot;,&quot;w&quot;) as f:
+f.write(json.dumps(infos))
+print(time.time()-timeS)
+                                                    
+                                                </code></pre>
+                                                <br>
+                                                <div class="entry-blog-list-left">
+                                                    <div class="entry-format">
+                                                        <div class="featured-image">
+
+                                                            <div class="galgame-manufacturers">
+
+                                                            </div>
+                                                            <div class="tab-info-translate-yes tab-info"></div>
+
+                                                            <a target="_blank" href="./Dump_Files/result2.png">
+                                                                <img class="img-fluid" src="./Dump_Files/result2.png">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <br>由图，多线程已经给我们的爬虫带来了成吨的优化。
+                                                <br>其它的高端方法在爬这个网站意义不大，但是可以了解一下：
+
+                                            </div>
+                                            <div class="post-btn">
+                                                <a href="https://www.cnblogs.com/zhaochangbo/p/7761432.html" target="_blank" class="btn btn-sm btn-outline-danger">
+                                                    <i class="fa fa-folder-open-o"></i> 参考文章</a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry-blog blog-default wow fadeInUp" style="visibility: hidden; animation-name: none;" id="anchor_5">
+                            <div class="entry-blog-listing clearfix">
+                                <div class="post-standard-view">
+                                    <div class="post-title-content">
+                                        <div class="post-header">
+                                            <h2 class="entry-post-title">
+                                                <a href="https://baike.baidu.com/item/网络爬虫/5162711?fr=aladdin">其他问题</a>
+                                            </h2>
+                                            <span class="category-meta">
+                                                网络爬虫遇到的困境有哪些？
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-left">
+                                        <div class="entry-format">
+                                            <div class="featured-image">
+
+                                                <div class="galgame-manufacturers">
+                                                    <span>Pixiv_Id</span>
+                                                </div>
+                                                <div class="tab-info-translate-yes tab-info"><span>65578040</span></div>
+
+                                                <a target="_blank" href="https://www.cnblogs.com/skaarl/p/9658401.html">
+                                                    <img class="img-fluid" src="./Dump_Files/65578040_p0.jpg" alt="网络爬虫遇到的困境有哪些">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry-blog-list-right">
+                                        <div class="post-content">
+
+                                            <div class="post-meta-list">
+
+                                                <span class="list-post-author">
+                        <i class="fa fa-user-circle"></i> kieed						</span>
+
+                                                <span class="list-post-Views">
+                        <i class="fa fa-thumbs-o-up"></i>  9,637						</span>
+                                                <span class="list-post-time">
+                            <i class="fa fa-pencil" rel="category tag"></i> 23:18 下午						</span>
+
+                                                <span class="list-post-comment">
+                        <i class="fa fa-comments-o"></i>  92,720 
+                        </span>
+
+                                            </div>
+
+                                            <div class="post-intro-text">
+                                                <h4>反爬</h4>
+                                                <br>如今由于爬虫的泛用和滥用给网站添了不少麻烦，
+                                                <br>不少网站都使用了相应的规则来进行反爬。
+                                                <br>比较温和的是robots.txt这个文档告诉大公司的爬虫哪些地方不给爬，要它们自觉遵守。
+                                                <br><del>当然写得不当会很方便第三方做渗透</del>
+                                                <br>而强硬一点的话……
+                                                <br><br>
+                                                <h5>Lv0：headers反爬</h5>
+                                                <br>主要通过检测UA，cookies，Referer等来实现。
+                                                <br><del>这个跟没有一样的，直接添加headers字段绕过。</del>
+                                                <br><br>
+                                                <h5><span style="color: rgb(0, 151, 0)">Lv1</span>：ip反爬</h5>
+                                                <br>检测你的ip是不是请求异常的多，从而进行封禁。
+                                                <br><del>这个可以考虑爬虫自sleep，或者部署多机位分部分爬取。</del>
+                                                <br><br>
+                                                <h5><span style="color: rgb(2, 0, 131)">Lv2</span>：js反爬</h5>
+                                                <br>使用js构造请求头或者请求体，跳转或者ajax异步，非http(s)协议，高级的还有js加解密配合花指令。
+                                                <br><del>善用抓包和开发工具的断点，然后就是js阅读理解和逆向解谜游戏了。</del>
+                                                <br><br>
+                                                <h5><span style="color: rgb(209, 0, 0)">Lv3</span>：验证码反爬</h5>
+                                                <br>常见于登录网页中，开发出来的主要目的应该是防止密码暴力破解，但也有用于反爬的例子。
+                                                <br>常见的形式是给图片输字符，进阶的有小学算术，选择反字，高级的有滑动滑块，选择相符图片。
+                                                <br><span style="color: #cecece">希望每个登录网页都能用上reCAPTCHA</span>
+                                                <br><del>有弱智的网站给图片命名为验证码结果的</del>
+                                                <br><del>见机行事，简单的验证码用基本AI算法可破，reCAPTCHA那种级别还是selenium吧。</del>
+                                                <br><br>
+                                                <h4>法律问题</h4>
+                                                <br>虽然大多情况下敢放出来就不怕被爬，是这个理。
+                                                <br>但是存在不少老板因为做的爬虫爬到涉密信息而坐牢的案例。
+                                                <br><br>
+                                                <h4>算法问题</h4>
+                                                <br>如何有效利用有限的IO资源
+                                                <br>如何在有限的时间内尽可能爬到权重大的资源
+                                                <br>如何应对网站间的回环，实现记录去重，异常自适应
+                                                <br>如何安排爬行顺序
+                                                <br>这些都是工业爬虫需要思考的宏观问题。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        BOSS,打代码的能力是有极限的
+                        <br>我从短暂的码农生涯当中学到一件事……
+                        <br>越是专注于前端设计，就越会受到现代审美的限制……
+                        <br>越是专注于后端开发，就越会受到数学算法的约束……
+                        <br><br>
+                        <h5>你到底想说什么？</h5>
+                        <br>
+                        <h3>我不做码农了！BOSS！我要做攻城狮！</h3>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="paging wow swing " style="visibility: hidden; animation-name: none;">
+                <ul class="pagination justify-content-center">
+                    <li><a class="paging-link" href="#anchor_top">回顶部</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+
+            <hr>
+            <div class="row align-items-center justify-content-md-between">
+                <div class="col-md-12 ">
+                    <ul class="nav nav-footer justify-content-center">
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <div class="copyright text-center">
+                        本h5框架抄自gogalgame，仅个人展示用
+                    </div>
+                    <div class="copyright text-center">
+                        voidf留
+                        <div style="display:none;">
+
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+
+                                function gtag() {
+                                    dataLayer.push(arguments);
+                                }
+                                gtag('js', new Date());
+
+                                gtag('config', 'UA-121803927-2');
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./Dump_Files/popper.min.js"></script>
+    <script src="./Dump_Files/bootstrap.min.js"></script>
+    <script src="./Dump_Files/headroom.min.js"></script>
+    <script src="./Dump_Files/wow.min.js"></script>
+    <script src="./Dump_Files/theme.js"></script>
+    <script src="./Dump_Files/Copied_Tone.js"></script>
+    <script src="./Dump_Files/highlight.min.js"></script>
+    <script src="./Dump_Files/switchSongs.js"></script>
+    <script src="./Dump_Files/replaceTag.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+
+</body>
+
+</html>
