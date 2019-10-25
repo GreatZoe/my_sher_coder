@@ -1,0 +1,30 @@
+body{
+    background-image:url(elements/background3.jpg)
+}
+
+.box1{
+    width:220px;
+    height:30px;
+    padding:10px 40px;
+    padding-bottom:none;
+    background-color:#CC9933;
+    border-bottom:10px black dashed;
+    margin-left:610px;
+    margin-top:230px;
+}
+
+.box2{
+    width:200px;
+    height:110px;
+    background-color:#FFCC99;
+    border:50px solid #CC9933;
+    border-top:none;
+    margin-left:610px;
+}
+
+.box3{
+    width:50px;
+    height:25px;
+    background-color:#FFFF66;
+    display:inline-block;
+}
