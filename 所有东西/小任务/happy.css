@@ -1,0 +1,19 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div {
+    border: 1px solid #000;
+    overflow: hidden;
+    padding: 0 1em .25em;
+}
+
+h1 {
+    color: green;
+}
+
+p {
+    /* ********** BEGIN ********** */
+font-weight:bold;
+    /* ********** END ********** */
+}
