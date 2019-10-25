@@ -1,0 +1,40 @@
+body{
+    background-image: url(elements/background.jpg);
+    background-repeat: no-repeat;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color:#DAA520;
+}
+
+#button{
+   width: 160px;
+   height: 160px;
+}
+
+a{
+    text-decoration: none;
+    float: right;
+}
+
+#click{
+    color:#F4A460;
+    font-size:20px;
+}
+
+
+.box1{
+    width:55px;
+    height:20px;
+    background-color:#FFFFCC;
+    float:right;
+    border:5px #FFCC99 dotted;
+    padding:10px;
+}
+
+.box4{
+    float:right;
+    position: relative;
+    top:200px;
+    left:490px;
+}

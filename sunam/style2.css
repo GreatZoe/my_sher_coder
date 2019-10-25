@@ -1,0 +1,23 @@
+﻿body{
+    background-image: url(elements/background2.jpg); 
+    background-repeat:repeat-x
+}
+
+span{
+    font-size:20px;
+}
+
+table{
+    border:1px solid white;
+}
+
+#description th,td{
+    vertical-align: center;
+    padding:5px;
+}
+
+#description th{
+    background-color:rgb(218,218,218); 
+    font-weight: normal;
+}
+/* 为什么在这里用类选择器不出效果*/
