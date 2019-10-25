@@ -1,0 +1,104 @@
+<!DOCTYPE html><!--声明为HTML5文档-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>游戏</title>
+    <style>
+        body{
+            background-color: seashell;
+            background-repeat: no-repeat;
+        }
+        .yingxiong{
+            background-color: azure;
+            text-align: center;
+        }
+        div.img {
+            border: 1px solid #ccc;
+        }
+
+        div.img:hover {
+            border: 1px solid #777;
+        }
+
+        div.img img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            background-color: aliceblue;
+            color: maroon;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px){
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px){
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="yingxiong">
+    <h1>游戏英雄</h1>
+</div>
+
+<div class="responsive">
+    <div class="img">
+        <img src="用刀.jpg" alt="马克西姆斯" width="600" height="400">
+        <div class="desc" >马克西姆斯:一位患有逆行性健忘 症的优秀剑士<br><br/>一个神秘事件摧毁了奥罗拉之地。在那之后过了一段时间，马克斯被圣灵的石晚所唤醒,开效好了在这贷士地上蔓延的不明瘟疫的源头。</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="img">
+            <img src="锤子.jpg" alt="蒙特" width="600" height="400">
+        <div class="desc">蒙特:在一个几乎被历史遗忘的年代里，这位名叫罗恩的乡下男孩在他短暂的第十四个夏天，因疾病吸出了最后一口气。与许多过世的人不同，这个可怜的孩子的灵魂被路德十五世国王俘虏了。他穿着一身奇怪的盔甲在一个更陌生的地方醒来，迷路了，不知所措。
+            “从现在起，你的名字是蒙特。”吱吱作响的声音来自于一个男人， 一-个扭曲的人，一个扭曲的脸和无趣的笑声，一个男人，他不想属于他。他害怕极了，但是在黑暗的夜晚，他仍然能听到微弱的声音一个女人的低语，那给他带来了一丝希望</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="img">
+        <img src="远程.jpg" alt="奎因·奈菲拉姆" width="600" height="400">
+        <div class="desc">奎因·奈菲拉姆:在满是畸形野兽和狂暴市民的奥罗拉，奎因是少数依然能保持清醒的人之一<br/><br/>
+        奎因出生于一个著名的黑巫师家族。</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="img">
+        <img src="镰刀.jpg" alt="鲁娜·月光花" width="600" height="400">
+        <div class="desc">鲁娜·月光花：来自新月岛。时光守护者的家乡。时光守护者是负责维护世界平衡的人<br><br/>
+        由于守护者要遵循传统，鲁娜受过严格的职业约束。这反过来使她形成了一种反叛的行为习惯。</div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Qdesign</title>
+		<link rel="stylesheet" href="happy.css">
+		<script type="text/javascript">
+					function aa() {
+						var uname = document.getElementById("username").value;//获取用户框的值
+						alert(uname);//打印
+						var upwd=document.getElementById("password").value;//获取密码框的值
+						alert(upwd);//打印
+						if (uname=="QZX"&&upwd=="QZXloveSH") {//同时判断用户名密码
+							document.getElementById('myForm').action="Fortune-telling.html";//给form表单的action属性赋值
+							alert("用户名密码正确");
+						}else{
+							window.history.go(-1);//返回当前页面/上一页
+						}
+					}
+				</script>
+        <style type="text/css">
+			body{
+				background-image: url(img/cat.png);
+			}
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            ul,li{
+                list-style: none;
+            }
+            a{
+                color: #888888;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            
+
+            #top{
+                width: 80%;
+                margin: 0 auto;
+            }
+            .bg-header {
+                border-bottom: 1px solid #eee;
+            }
+
+            /*********  Begin  **********/
+            #top .logo {
+                width: 120px;
+                height: 50px;
+                margin-top: 11px;
+                /*向左浮动*/
+                float: left;
+            }
+            #top .head-list {
+                /*向右浮动*/
+                float: right;
+            }
+            #top .head-list li {
+                padding: 0 20px;
+                /*垂直居中，高度为74px*/
+                line-height: 74px;
+                /*向左浮动*/
+                float: left;
+            }
+            /*********  End **********/
+
+            #top .head-list li a:hover {
+                color: #333;
+                text-decoration: underline;
+            }
+			#shouye{
+			   background-color: pink;
+			    border:1px solid #F00; width:100px; height:70px;
+				border-radius: 100px;
+				
+		
+			}
+			.shouye{
+				margin-left: 15px;
+				
+				
+			}
+			#gy{background-color: pink;
+			    border:1px solid #F00; width:100px; height:70px;
+				border-radius: 100px;
+					
+			}
+			.gy{
+				margin-left: 15px;}
+				#zz{background-color: pink;
+				    border:1px solid #F00; width:100px; height:70px;
+					border-radius: 100px;
+						
+				}
+				.zz{
+					margin-left: 15px;}
+			#sm{
+			   background-color: pink;
+			    border:1px solid #F00; width:100px; height:70px;
+						border-radius: 100px;
+			}
+			.sm{
+k				
+			}
+			#xz{
+			   background-color: pink;
+			    border:1px solid #F00; width:100px; height:70px;
+						border-radius: 100px;
+			}
+			.xz{
+				margin-left: 15px;}
+				#jz{
+				   background-color: pink;
+				    border:1px solid #F00; width:100px; height:70px;
+							border-radius: 100px;
+				}
+				.jz{
+					margin-left: 15px;}
+			img {
+			  float: left;
+			  margin-right: 1em;
+			}
+			
+		.left{ width:300px; height:700px; background:gainsboro; float:left; margin-right:10px;}
+			.right1{ width:310px; height:300px; background:; float:right; margin-right:1px;}
+			.right2{ width:305px; height:295px; background:; float:right; margin-right:2px;}
+			.right3{ width:300px; height:290px; background:; float:right; margin-right:3px;}
+			.right4{ width:295px; height:285px; background:; float:right; margin-right:4px;}
+			.right5{ width:290px; height:280px; background:; float:right; margin-right:5px;}
+			.right6{ width:280px; height:275px; background:; float:right; margin-right:6px;}
+			.rightq1{ width:300px; height:300px; background:orange; margin-left:1px;border-radius: 50px;}
+			.rightq2{ width:295px; height:295px; background:black; margin-left:2px;border-radius: 500px;}
+			.rightq3{ width:290px; height:290px; background:grey; margin-left:3px;border-radius: 50px;}
+			.rightq4{ width:285px; height:285px; background:blanchedalmond; margin-left:4px;border-radius: 50px;}
+			.rightq5{ width:280px; height:280px; background:; margin-left:5px;border-radius: 50;}
+			.rightq6{ width:275px; height:275px; background:; margin-left:6px;border-radius: 50px;}
+			.rightw1{ width:300px; height:300px; background:; margin-right:1px;}
+			.rightw2{ width:295px; height:295px; background:;margin-right:2px;}
+			.rightw3{ width:290px; height:290px; background:;margin-right:3px;}
+			.rightw4{ width:285px; height:285px; background:; margin-right:4px;}
+			.rightw5{ width:280px; height:280px; background:;  margin-right:5px;}
+			.rightw6{ width:275px; height:275px; background:;  margin-right:6px;}
+        </style>
+		
+		
+		
+		    
+    </head>
+
+    <body>
+        <header class="bg-top">
+            <div id="top" class="clearfix">
+                <img src="img/Qdesign.jpg" alt="logo" class="logo" />
+                <ul class="head-list">
+                    <li>
+                        <a href="Qdesign.html">
+							<div id="shouye">
+								<font size="6" class="shouye">Home</font></div></a>
+                    </li>
+                    <li>
+                        <a href="About.html" target="_blank">
+							<div id="gy"><font size="6" class="gy">About</font></div></a>
+                    </li>
+                    <li>
+                        <a href="Author.html" target="_blank">
+							<div id="zz">
+								<font size="6" class="zz">Author</font>
+							</div></a>
+                    </li>
+                    <li>
+                        <a href="Fortune-telling.html" target="_blank">
+							<div id="sm">
+							<font size="7" class="sm">Test</font>
+							</div></a>
+                    </li>
+                    <li>
+                        <a href="Download.html" target="_blank"><div id="xz">
+							<font size="5" class="xz">Download</font>
+							</div></a>
+                    </li>
+                    <li>
+                        <a href="js/donate.html" target="_blank">
+							<div id="jz">
+							<font size="6" class="jz">Donate</font>
+							</div></a>
+                    </li>
+                </ul>
+            </div>
+			<div class="left">
+			        <h1 >O Captain! My Captain!</h1>
+			        <img src="https://www.educoder.net/attachments/download/170157" width="300" height="175" alt="Blue Flax (Linum lewisii)" />
+			        <p><font size="6">O Captain! my Captain! our fearful trip is done,
+			The ship has weather’d every rack, the prize we sought is won,
+			The port is near, the bells I hear, the people all exulting,
+			While follow eyes the <em>steady keel</em>, the vessel grim and daring;</font></p>
+			        <p><small font-size="10px" color="lightslategray">&copy; Walt Whitman</small></p>
+			            
+			    </div>
+				<div class="rightq1">
+					<div class="rightq2">
+						<div class="rightq3">
+							<div class="rightq4">
+								<div class="rightq5">
+									<br><br><br>
+									<font size="7">
+										&nbsp;
+										&nbsp;
+										&lt;
+										</font>
+										
+										<br><br>
+										<font size="7">
+											&nbsp;
+											&nbsp;
+											&nbsp;
+											&nbsp;
+											&gt;
+											</font>
+										<br><br>
+										<font size="7">
+											&nbsp;
+											&nbsp;
+											&lt;
+											</font>
+											
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				
+				
+				</div>
+				<div class="right1">
+					<div class="right2">
+						<div class="right3">
+							<div class="right4">
+								<div class="right5">
+									<font size="4">&nbsp;&nbsp;&nbsp;
+									&nbsp;&nbsp;&nbsp;
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please
+									 login! Here's a surprise!</font>
+									 <br>
+									 <font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username is QZX！</font>
+									 <br>
+									 <font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password is QZXloveSH！</font>
+									<form style="text-align: center;"  method="get" id="myForm">
+<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名：</font><input id="username" class="uname" type="text" name="username" /><br /> 
+						<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;码：</font><input id="password" class="upwd" type="password" name="password" /><br />
+<br><font size="5" color="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码</font><input  type="text" />
+						<div class="container" >
+						    <div class="vertify-code"></div>
+						    <span class="change">换一张</span>
+						</div>
+						
+						<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+						<script type="text/javascript">
+						   
+						   $(document).ready(function(){
+						        num_random();
+						       
+						        $(".change").click(function(){
+						            num_random();
+						        })
+						
+						      
+						      function num_random(){
+						           var arr_code = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+						         
+						         var arr_back = ['#fffff0', '#f0ffff', '#f0fff0', '#fff0f0'];   
+						         var arr_weight = ['normal','bold','bolder','lighter'];
+						         var arr_style = ['normal','italic','oblique'];   
+						         var index_back= Math.floor(Math.random()* 3);           
+						         var arr_color = ['#FF0033', '#006699', '#993366', '#FF9900', '#66CC66', '#FF33CC'];
+						           
+								   var index_color= Math.floor(Math.random()*5);
+						 
+						         var str = '';
+						         var num;
+						           for(var i =0; i<4; i++){
+						                  num = Math.floor(arr_code.length * Math.random());
+						               str = str + arr_code[num];
+						           }
+						           $(".vertify-code").css({
+						                 background: arr_back[index_back],
+						               fontWeight: arr_weight[index_back],               
+						               fontStyle: arr_style[index_back],
+						               
+						        
+						              color: arr_color[index_color]
+						 
+						           })
+						           $(".vertify-code").text(str);
+						           
+						      }
+						
+						    
+						
+						
+						
+						   })
+						</script>
+						
+												<input type="submit" value="提交" onclick="aa()" />
+												<input type="reset" value="重置" />
+											</form>
+		
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="rightw1">
+					<div class="rightw2">
+						<div class="rightw3">
+							<div class="rightw4">
+								<div class="rightw5">
+									<font size="7">
+																			This is a web page for fortune telling!</font>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+        </header>
+    </body>
+</html>
+											
+

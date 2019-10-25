@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>作业</title>
+	<script>
+	function myFunction()
+	{
+    alert("不要点我,看下面...");
+	}
+	/*function go(name) {
+
+	window.location.href =name;*/   //本想让点击单选框，弹出超链接的页面，但好像失败了
+</script>
+</head>
+<style type="text/css">
+	*{
+		padding:0;
+		margin :0;
+	}
+	body{
+		text-align: center;
+		background: #FFCCFF;
+		font-family: "微软雅黑"；
+		font-size:28px;
+		background-image: linear-gradient(#CC00FF,#FF66FF,#9999FF,#CC99FF)
+
+	}
+	p { 
+		color: #000033;
+		text-align: left;
+		font-size: 160%;
+		margin-left: 4px;
+		margin-top: 6px;
+	}
+	img{
+		margin-top: 1.5%;
+		margin-bottom: 1%;
+		border-radius: 50%;
+		width: 16%;
+		transition: all 0.4s;
+		cursor: pointer;
+		transform: rotate(40deg);
+		  -ms-transform: rotate(30deg);		 /* IE 9 */
+		  -webkit-transform: rotate(30deg); 	/* Safari and Chrome */
+		  -o-transform: rotate(30deg);		 /* Opera */
+		  -moz-transform: rotate(30deg);      /* Firefox */
+	}
+	img:hover{
+		transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+
+	}
+	.question{
+		display:inline-block;
+		margin-bottom:  20px;
+		font-size: 30px;
+		letter-spacing:3px;
+		font-family:Consola; 
+	}
+	.btn{
+		transition: all 0.3s;
+		font-size: 26px;
+		border-style: none;
+		padding: 6px;
+		font-family: Arial,Consola;
+		font-style: italic;
+		height: 65%;
+		width: 23%;
+		border-radius: 50%;
+		letter-spacing:3px;
+		margin-bottom:35px;
+		background-image: linear-gradient(#9900CC,#9933CC,#9999FF,#CC99FF)
+	}
+	.next{
+		transition: all 0.3s;
+		font-size: 28px;
+		border-style: none;
+		padding: 8px;
+		font-family: Arial,Consola;
+		font-style: italic;
+		height: 65%;
+		width: 25%;
+		letter-spacing:4px;
+		margin-bottom:40px;
+		background-image: linear-gradient(#9900CC,#9933CC,#9999FF,#CC99FF)
+	}
+	.btn:hover{
+		transform: scale(1.1);
+		 -ms-transform: scale(1.1);
+		 -webkit-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+		 -moz-transform: scale(1.1);
+	}
+	.next:hover{
+		transform: scale(1.2);
+		 -ms-transform: scale(1.2);
+		 -webkit-transform: scale(1.2);
+		 -o-transform: scale(1.2);
+		 -moz-transform: scale(1.2);
+	}
+	.bankground{
+		margin: auto;
+		width: auto;
+		overflow: hidden;
+		/*background: black;
+		/*height: 550px;*/            /*这里有问题，如果把这行加上，就奇奇怪怪的*/
+	}
+	.box{border:3px dashed #3300CC;
+		margin: 20px;
+		margin-left: 30px;
+		width: 380px;
+		/*height: 400px;*/
+		float: left;
+	}
+	.fl{text-align: left;
+		float:left;
+		width: 500px;
+		margin-right: 10px;
+		font-size: 28px;
+		font-family: "微软雅黑"；
+		
+	}
+	.fl_1{
+		margin-left: 30px;
+		float:left;
+	}
+	.understand,.sub{transition: all 0.3s;
+		font-size: 26px;
+		border-style: none;
+		padding: 6px;
+		font-family: "微软雅黑";
+		width:200px; 
+		letter-spacing:3px;
+		margin-top :25px;
+		margin-bottom: 15px;
+		cursor: pointer;
+		background-image: linear-gradient(#9900CC,#9933CC,#9999FF,#CC99FF)
+	}
+	#next{
+		display: block;
+		margin: 15px 16px;		
+	}
+	.box_2{
+		border:4px solid #6666FF;
+		height: 340px;
+		width: 380px;
+		float: right;
+		margin: 20px 100px 20px 50px;
+		/*background: yellow;*/
+		overflow: auto;
+
+	}	
+	.tit{ 
+		display: inline-block;
+		/*margin-top: 40px;*/
+
+		font:bold 30px "微软雅黑";
+	}
+	li{
+		text-align: left;
+		text-indent:2em;
+		line-height: 32px;
+		font-size: 26px;
+	}
+	.log1,.log2,.log3{
+		float: left;
+		border:none;
+		/*background: red;
+		/*padding: 40px;*/
+		height:38px;
+		width: 38px;
+		transition: all 1.4s;
+		margin-left:10px;
+	}
+	.log1{
+		background-image:url(img/log1.png); 
+	}
+	.log2{
+		background-image:url(img/log2.png); 
+	}
+	.log3{
+		background-image:url(img/log3.png); 
+
+	}
+	.understand{
+		width: 55%;
+		margin-top:25px;
+
+	}
+	.vid{
+		height: auto;
+		width: 35%;
+		margin-left:30% ;
+		margin-right:30% ;
+		/*text-align: center; */
+
+	}
+	.move{
+		height: 700px;
+		width: auto;
+		/*border:2px solid black;
+		/*background: red;*/
+		margin-top: 20px;
+	}
+	#move{
+		height: 40px;
+		width: 40px;
+		background-image:url(img/log1.png);
+		animation-name: hk;
+		animation-duration: 14s;
+		animation-delay:0s;
+		animation-iteration-count:300;
+		position:relative;
+		top:0px;
+		left: 480px;
+	}
+	@keyframes hk{
+		from {
+			transform: translate(0px,0px);
+		}
+		0%{
+			transform: translateX(0px);
+		}
+		25%{
+			transform: translateX(438px);
+		}
+		50%{
+			transform: translate(438px,645px);
+		}
+		75%{
+			transform:translate(0px,645px);
+		}
+		to {
+			transform:translate(0px,0px);
+		}
+	}     /*这是一个不太成功的滑块，他不能一直不停的动*/
+	
+	
+</style>
+<body>
+	<p></p>
+    <script>
+        var pp = document.querySelector("p");
+        var str = "我女朋友分手了，但我不能安慰她..."
+        n = 0;
+        var timer;
+        timer = setInterval(function () {
+            if (n < str.length) {
+                pp.innerHTML += str.charAt(n);//sunstring(0,n)
+                n++
+            } else {
+                clearInterval(timer);
+            }
+        }, 100)
+    </script>
+	<div class="head">
+		<a onclick="myFunction()"  title="不要点"><img src="img/head.jpg" alt="小猫头像" /></a>
+	</div>
+	<div class="bankground" >
+		<span class="question">How are you feeling today?</span>
+		<form action="form_action.asp">
+			<input class="btn" type="button" value="GREAT!"  title="点下一个" /><br />
+			<input id="nt" class="btn" type="button" value="GOOD!" title="点下一个" /><br />
+			<input class="btn" type="button" value="OKAY!" title="点下一个" /><br />
+			<a  href="https://music.163.com/m/program?id=2063103090&userid=368268094&from=message" target="_blank"><input class="btn" type="button" value="BAD!" title="不开心就点我吧"/></a><br />
+			<a href="#nt"><input type="button" value="NEXT" class="next " /></a>
+		</form>
+	<div class="box">
+		<div class="fl">
+			<span id="next">周日培训的gg/jj里谁最妖娆？</span>
+			
+			<div class="fl_1">
+				<form action="ans.html" value="哈哈哈哈" target="_blank">
+				<input type="radio" name="name" id="up" /> <label for="up">update gg</label><br />
+				<input type="radio" name="name" id="ch" /> <label for="ch">陈 gg</label> <br />
+				<input type="radio" name="name" id="yi" /> <label for="yi">尹 gg</label> <br />
+				<input type="radio" name="name" id="zh" /> <label for="zh">周 jj</label> <br />
+				<input type="radio" name="name" id="gu" /> <label for="gu">顾 jj</label> <br />
+				<input type="radio" name="name" id="li" /> <label for="li">李 jj</label> <br />
+				<input type="submit" value="提交" class="sub" target="_blank" />
+			</form>
+		</div>
+		</div>
+	</div>
+	<div class="box_2">
+		<div class="log1" name="log1"></div>
+		<div class="log2" name="log2"></div>
+		<div class="log3" name="log3"></div>
+		<span class="tit">学习过程中的问题概要：</span>
+		<ol>
+		<li>1、标签太多，学了就忘了</li>
+		<li>2、很多标签还是掌握不好，有许多细节没有掌握，很多属性有的知道不会用，有的都不知道</li>
+		<li>3、网上看到很多好看的效果，但自己都写不出来（哭唧唧）</li>
+		<li>4、对继承性、层叠性和权重不能很好把握，出现很多莫名其妙的问题，做出来的和想的不一样啊(T_T)</li>
+		<li>5、对 1像素 的大小不能很好把握，每次布局实验好几遍，很费时间</li>
+		<li>6、form 的 action 着实不会用，都是用a标签里面套 button</li>
+		<li>7、还不能自适应各种屏幕大小，兼容多种浏览器，有时候不局很乱。</li>
+			
+		</ol>
+		<form >
+		<a href="#vid"><input type="button" value="好的，了解！" class="understand"></a>
+	</form>
+	</div>
+	</div>
+	
+	<div class="move">
+		<div id="move"></div>
+		<div class="vid" id="vid">	
+		<video src="1.mp4" height="600px" controls="controls"></video>	
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #00FFFF;
+}
+.middle{
+	position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.btn{
+	position: relative;
+	display: block;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-family: "bookman old style";
+	text-decoration:none ;
+	margin: 30px 0;
+	border: 2px solid #ff7675;
+	padding: 14px 50px;
+	text-transform: uppercase;
+	overflow: hidden;
+	transform: 1s all ease;
+}
